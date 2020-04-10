@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.galaxy.instadownloader.ui.initial.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_imageDownloaderFragment"
+            app:destination="@id/imageDownloaderFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_videoDownloaderFragment"
+            app:destination="@id/videoDownloaderFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/imageDownloaderFragment"
+        android:name="com.galaxy.instadownloader.ui.image.ImageDownloaderFragment"
+        android:label="fragment_image_downloader"
+        tools:layout="@layout/fragment_image_downloader" >
+        <argument
+            android:name="args"
+            app:argType="com.galaxy.instadownloader.domain.model.InstagramImage" />
+    </dialog>
+    <dialog
+        android:id="@+id/videoDownloaderFragment"
+        android:name="com.galaxy.instadownloader.ui.video.VideoDownloaderFragment"
+        android:label="VideoDownloaderFragment" >
+        <argument
+            android:name="video"
+            app:argType="com.galaxy.instadownloader.domain.model.InstagramVideo" />
+    </dialog>
+</navigation>
