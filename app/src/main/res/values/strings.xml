@@ -11,4 +11,8 @@
     <string name="hint_download">Insta url</string>
     <string name="button_text_download">Download Image/Video</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_text_paste">Paste</string>
+
 </resources>

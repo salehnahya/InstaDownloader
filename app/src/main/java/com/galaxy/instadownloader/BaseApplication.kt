@@ -1,3 +1,5 @@
+package com.galaxy.instadownloader
+
 import android.content.Context
 import com.galaxy.instadownloader.di.application.DaggerAppComponent
 import dagger.android.AndroidInjector

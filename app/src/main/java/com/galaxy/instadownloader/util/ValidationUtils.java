@@ -36,10 +36,10 @@ public class ValidationUtils {
     if (!INSTAGRAM_URL_HOST_WWW.equals(host) && !INSTAGRAM_URL_HOST_NON_WWW.equals(host)) {
       return false;
     }
-    String path = inputUrl.getPath();
+/*    String path = inputUrl.getPath();
     if (path == null || !path.startsWith(INSTAGRAM_URL_PATH_PREFIX)) {
       return false;
-    }
+    }*/
     return true;
   }
 }
